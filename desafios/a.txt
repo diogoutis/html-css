@@ -1,0 +1,86 @@
+@charset "UTF-8";
+
+* {
+    text-align: justify;
+    text-indent: 35px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(132, 225, 173);
+    margin: 0px;
+}
+header {
+    height: 155px;
+    padding: 10px;
+    margin: auto;
+    background-image: linear-gradient( to top, rgb(26, 91, 56)25%, rgb(44, 154, 92), rgb(56, 201, 121));
+}
+
+header > h1 {
+    text-align: center;
+    color: white;
+}
+
+header > p {
+    text-align: center;
+    color: white;
+}
+
+header > h2 {
+    font-family: 'Idoid';
+}
+
+nav > a {
+    text-decoration: none;
+    height: 10px;
+    width: 10px;
+    color: white;
+    padding-left: 10px;
+    padding-right: 15px;
+    border-radius: 5px;
+}
+
+nav > a:hover {
+    background-color: rgb(44, 154, 92);
+}
+
+main {
+    height: 2800px;
+    width: 850px;
+    margin: 0px auto 0px auto;
+    background-color: white;
+    text-align: justify;
+}
+
+main > h1 {
+    padding: 20px;
+}
+
+main > h2 {
+    padding: 20px;
+}
+
+main > p {
+    padding: 20px;
+    
+}
+
+main > picture {
+    margin: auto;
+}
+main > article {
+    background-color: rgb(197, 235, 214);
+    border-radius: 10px;
+}
+
+article > #principal {
+    background-color: rgb(47, 168, 102);
+    border-radius: 10px;
+}
+
+footer {
+    text-align: center;
+    background-color: rgb(26, 91, 56);
+}
+

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: dimgray;
+            margin: 0px;
+        }
+
+        header {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 8px;
+            box-shadow: 4px 4px 9px 0px rgba(0, 0, 0, 0.363);
+        }
+
+        nav {
+            background-color: rgb(156, 141, 141);
+            border-radius: 5px;
+            padding: 3px;
+        }
+
+        button > a {
+            text-decoration: none;
+            padding: 0px 0px 0px 28px;
+            color: rgb(0, 0, 0);
+            font-weight: bold;
+            margin-right: 30px;
+            
+        }
+
+        button:hover {
+            background-color: yellow;
+        }
+
+        button > a:hover {
+            color: blue;
+
+        }
+
+        nav > button {
+            border-radius: 5px;
+            box-shadow: inset 0px 0px 6px 1px rgba(0, 0, 0, 0.534);
+        }
+
+        main {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 8px;
+            box-shadow: 4px 4px 9px 0px rgba(0, 0, 0, 0.363);
+        }
+        
+        article > aside {
+            background-color: rgb(134, 134, 134);
+            width: 170px;
+            border-radius: 5px;
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 4px;
+            margin: 0px;
+            
+        }
+
+        footer > p {
+            margin: 0px;
+        }
+        div#bola {
+            height: 100px;
+            width: 100px;
+            background-color: white;
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            margin: 20px auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <button><a href="#">home</a></button>
+            <button><a href="#">noticias</a></button>
+            <button><a href="#">enquete</a></button>
+            <button><a href="#">futebol</a></button>
+            <button><a href="#">el hero</a></button>
+        </nav>
+    </header>
+    <main>
+        <section id="assintos">
+
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>noticias sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis beatae blanditiis ab et est esse. Quidem minima beatae reiciendis dolore aperiam aspernatur aut quasi maxime accusamus deleniti, optio vitae quam.</p>
+                <aside><p>artigo de: Jose da Silva</p></aside>
+            </article>
+            <article>
+
+            </article>
+        </section>
+    </main>
+    <footer>
+        <P>em DESENVOLVIMENTO</P>
+    </footer>
+    <div id="bola">
+
+    </div>
+</body>
+</html>
