@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS margin 04</title>
+    <style>
+        h1 {
+            text-align: center;
+        }
+
+        #bola {
+            position: relative;
+            height: 200px;
+            width: 200px;
+            background-color: blue;
+            border-radius: 50%;
+            margin: auto;
+        }
+
+        #pbola {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -100%);
+        }
+    </style>
+</head>
+<body>
+    <h1>This is a heading</h1>
+    <p>This is a paragraph</p>
+    <p>This is a paragraph</p>
+
+    <div id="bola"><p id="pbola">Olá</p></div>
+</body>
+</html>
