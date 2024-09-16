@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS border 08</title>
+    <style>
+        body {
+            text-align: center;
+        }
+
+        #one {
+            border-style: solid;
+        }
+
+        #two {
+            border-style: dashed dotted;
+        }
+
+        #three {
+            border-style: dotted solid dashed;
+        }
+
+        #four {
+            border-style: dotted dashed double groove;
+        }
+
+        #dif {
+            border-top-style: groove;
+            border-right-style: double;
+            border-bottom-style: dashed;
+            border-left-style: dotted;
+        }
+    </style>
+</head>
+<body>
+    <p id="one">1 border style.</p>
+    <p id="two">2 different border styles.</p>
+    <p id="three">3 different border styles.</p>   
+    <p id="four">4 different border styles.</p>
+
+    <p id="dif">Different border styles</p>
+</body>
+</html>
