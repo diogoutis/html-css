@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS tables 06</title>
+    <style>
+        table {
+            width: 50%;
+            border-collapse: collapse;
+            margin: auto;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        th, td {
+            border: 2px solid green;
+        }
+
+        th {
+            background-color: lightblue;
+        }
+
+        tr:hover {
+            background-color: gray;    
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <th scope="col">Firstname</th>
+            <th scope="col">Lastname</th>
+        </tr>
+        <tr>
+            <td>Peter</td>
+            <td>Griffin</td>
+        </tr>
+        <tr>
+            <td>Lolis</td>
+            <td>Griffin</td>
+        </tr>
+    </table>
+</body>
+</html>
