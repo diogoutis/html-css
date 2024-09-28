@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS align 08</title>
+    <style>
+        .center {
+            height: 200px;
+            position: relative;
+            border: 3px solid red;
+        }
+
+        .center p {
+            margin: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;       
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+<body>
+    <h1>Center with position and transform</h1>
+
+    <div class="center">
+        <p>I am vertically and horizontally centered.</p>
+    </div>
+</body>
+</html>
