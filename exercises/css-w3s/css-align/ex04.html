@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS align 04</title>
+    <style>
+        div {
+            border: 3px solid red;
+            padding: 5px;
+        }
+
+        .img1 {
+            float: right;
+        }
+
+        .img2 {
+            float: right;
+        }
+
+        .clearfix::after {
+            content: '';
+            clear: both;
+            display: table;
+        }
+    </style>
+</head>
+<body>
+    <h1>Without Clearfix and With New Modern Clearfix</h1>
+
+    <h2>With Clearfix</h2>
+    <p>This image is floated to the right. It is also taller than the element containing it, so it overflows outside of its container:</p>
+
+    <div>
+        <img class="img1" src="image/gustavo-guanabara.png" alt="Gustavo Gafanhoto Mestre Guanabara" width="170" height="170">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+    </div>
+
+    <h2 style="clear: right;">With New Modern Clearfix</h2>
+    <p>Adicione o hack clearfix ao elemento que o contém para corrigir este problema:</p>
+
+    <div class="clearfix">
+        <img class="img2" src="image/gustavo-guanabara.png" alt="Gustavo Gafanhoto Mestre Guanabara" width="170" height="170">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati, sequi?
+    </div>
+</body>
+</html>
