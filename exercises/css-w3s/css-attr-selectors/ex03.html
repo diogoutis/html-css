@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS attr selectors 03</title>
+    <style>
+        [title~='flower'] {
+            border: 5px solid yellow;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS [attribute~='value'] Selector</h1>
+    <p>All images with the title attribute containing the word 'flower' get a yellow border</p>
+
+    <img src="images/klematis.jpg" title="klematis flower" width="150" height="113">
+    <img src="images/img_flwr.gif" title="flower" width="224" height="162">
+    <img src="images/img_tree.gif" title="img_tree" width="200" height="358">
+</body>
+</html>
