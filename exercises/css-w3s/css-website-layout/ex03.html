@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Website Layout 03</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            margin: 0;
+        }
+
+        header {
+            background-color: #f1f1f1;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        nav a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .column {
+            float: left;
+            width: 33.33%;
+            padding: 15px;
+        }
+
+        .row::after {
+            content: '';
+            display: table;
+            clear: both;
+        }
+
+        @media screen and (max-width: 600px) {
+            .column {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Header</h1>
+        <p>Resize the browser window to see the responsive effect.</p>
+    </header>
+
+    <nav>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+    </nav>
+
+    <div class="row">
+        <div class="column">
+            <h2>Column</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio, alias ratione laudantium aperiam laboriosam praesentium magni debitis commodi. Rem voluptates dolor voluptatem in cum ratione repudiandae nemo officiis dolore sunt.</p>
+        </div>
+
+        <div class="column">
+            <h2>Column</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore facilis pariatur error est repellat obcaecati, debitis quaerat repellendus optio fugiat, enim, itaque quo rem at quos natus aperiam sit quas.</p>
+        </div>
+
+        <div class="column">
+            <h2>Column</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis accusantium qui natus molestiae odio veritatis praesentium totam, tenetur ad quibusdam dolorum explicabo modi ratione officia facere ducimus ipsa delectus asperiores.</p>
+        </div>
+    </div>
+</body>
+</html>
