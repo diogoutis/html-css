@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS border images 02</title>
+    <style>
+        #borderimg {
+            border: 10px solid transparent;
+            padding: 15px;
+            border-image: url(images/border.png) 30 stretch;
+        }
+    </style>
+</head>
+<body>
+    <h1>The border-image Property</h1>
+    <p>Here, the midlle sections of the image are stretched to create the border:</p>
+
+    <p id="borderimg">border-image: url(border.png) 30 stretch;</p>
+
+    <p>Here is the original image:</p> <img src="images/border.png" alt="border">
+</body>
+</html>
