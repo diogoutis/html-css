@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS backgrounds 08</title>
+    <style>
+        #example1 {
+            border: 10px solid black;
+            padding: 35px;
+            background: url(images/img_flwr.gif);
+            background-repeat: no-repeat;
+        }
+
+        #example2 {
+            border: 10px solid black;
+            padding: 35px;
+            background: url(images/img_flwr.gif);
+            background-repeat: no-repeat;
+            background-origin: border-box;
+        }
+
+        #example3 {
+            border: 10px solid black;
+            padding: 35px;
+            background: url(images/img_flwr.gif);
+            background-repeat: no-repeat;
+            background-origin: content-box;
+        }
+    </style>
+</head>
+<body>
+    <h1>The background-origin Property</h1>
+
+    <p>No background-origin (padding-box is default):</p>
+    <div id="example1">
+        <h2>Lorem, ipsum dolor.</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias repellendus tempore perspiciatis ea. Necessitatibus et distinctio consequuntur? Fuga, laborum! Error.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos dignissimos quidem itaque porro minima consequatur nihil veritatis autem aperiam nisi!</p>
+    </div>
+
+    <p>background-origin: border-box;</p>
+    <div id="example2">
+        <h2>Lorem, ipsum dolor.</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, eligendi rem vel tempora molestiae et non minima veniam officiis neque.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non porro consectetur sapiente rerum iure adipisci, ipsum quo cupiditate ratione culpa?</p>
+    </div>
+
+    <p>background-origin: content-box;</p>
+    <div id="example3">
+        <h2>Lorem, ipsum dolor.</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem at quam amet, ipsam ipsum adipisci quae! Est exercitationem vel voluptates.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. At hic porro, fuga distinctio voluptates ullam delectus architecto est cupiditate atque!</p>
+    </div>
+</body>
+</html>
