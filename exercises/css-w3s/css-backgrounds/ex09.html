@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS backgrounds 09</title>
+    <style>
+        #example1 {
+            border: 10px dotted black;
+            padding: 35px;
+            background: yellow;
+        }
+
+        #example2 {
+            border: 10px dotted black;
+            padding: 35px;
+            background: yellow;
+            background-clip: padding-box;
+        }
+
+        #example3 {
+            border: 10px solid black;
+            padding: 35px;
+            background: yellow;
+            background-clip: content-box;
+        }
+    </style>
+</head>
+<body>
+    <h1>The background-clip Property</h1>
+
+    <p>No background-clip (border-box is default):</p>
+    <div id="example1">
+        <h2>Lorem, ipsum dolor.</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur modi voluptatum, consequatur eum quaerat exercitationem placeat cumque. Obcaecati, cumque minus.</p>
+    </div>
+
+    <p>background-clip: padding-box;</p>
+    <div id="example2">
+        <h2>Lorem, ipsum dolor.</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero aut cumque cupiditate aspernatur accusantium repellendus accusamus architecto deserunt perspiciatis eveniet.</p>
+    </div>
+
+    <p>background-clip: content-box;</p>
+    <div id="example3">
+        <h2>Lorem, ipsum dolor.</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam ducimus nihil delectus magni facere nesciunt possimus deserunt reiciendis, enim dicta!</p>
+    </div>
+</body>
+</html>
